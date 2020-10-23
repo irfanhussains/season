@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Season's Art Gallery - IT’S ALL ABOUT CREATIVITY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="assets/css/navbar-fixed-left.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="about">
+<nav class="navbar navbar-inverse navbar-fixed-left">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <div class="social-mobile hidden-lg hidden-md hidden-sm">
+      	 <a href="#"><i class="fab fa-facebook"></i></a> 
+         <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>    
+      </div>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-responsive"></a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" class="bg1">Home</a></li>
+        <li class="active"><a href="about.html" class="bg2">About</a></li>
+        
+        <li class="dropdown"> <a href="#" class="dropdown-toggle bg3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="bg4">Client's Work</a></li>
+        <li><a href="#" class="bg1">Contact</a></li>
+      </ul>
+      <div class="footer mobile hidden-lg hidden-md hidden-sm">
+        <div class="copyright"><i class="fa fa-copyright"></i> 2020. All Season Art Gallery. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+  <div class="footer hidden-xs"> 
+  	<a href="#"><i class="fab fa-facebook"></i></a> 
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>    
+    <div class="copyright"><i class="fa fa-copyright"></i> 2020. All Season Art Gallery. All Rights Reserved.
+  </div>
+</nav>
+  <div class="container-fluid">
+	<div class="overlay"></div>
+    <div class="container inner-page">
+    <div class="col-xs-12">
+    	<h1>About Us</h1>
+        <p>Coming Soon....</p>
+    </div>
+    </div>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+var $item = $('.item'); 
+var $wHeight = $(window).height();
+$item.eq(0).addClass('active');
+$item.height($wHeight); 
+$item.addClass('full-screen');
+
+$('.carousel img').each(function() {
+  var $src = $(this).attr('src');
+  var $color = $(this).attr('data-color');
+  $(this).parent().css({
+    'background-image' : 'url(' + $src + ')',
+    'background-color' : $color
+  });
+  $(this).remove();
+});
+
+$(window).on('resize', function (){
+  $wHeight = $(window).height();
+  $item.height($wHeight);
+});
+
+$('.carousel').carousel({
+  interval: 6000,
+  pause: "false"
+});
+</script>
+</body>
+</html>
